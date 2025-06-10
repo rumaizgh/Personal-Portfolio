@@ -1,0 +1,115 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #000000;
+    padding-top: 80px;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #dddd609f;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+#name{
+    padding-left: 100px;
+}
+#nav {
+    display: flex;
+    gap: 30px;          
+    font-size: 20px;
+    padding-right: 100px;
+}
+#nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+#pic{
+    align-items: center;
+    display: flex;          
+
+}
+#image {
+    position: relative;
+    border-radius: 40px;
+    width: 300px;
+    height: auto;       
+}
+@keyframes fadeIn {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.fade-img{
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes move {
+    from{
+        transform:translateX(500px)
+    }
+    to{
+        transform: translateX(150px);
+    }
+}
+.move-animation{
+    animation-name: move;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+#about h1{
+    font-size: xx-large;
+    padding-left: 80px;
+    color: #ffffff;
+}
+#projects h1{
+    font-size: xx-large;
+    text-align: center;
+    color: #ffffff;
+
+}
+#contact h1{
+    font-size: xx-large;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+}
+#about-cont p{  
+    color: #ffffff;
+    padding-left: 200px;
+    padding-right: 600px;
+    font-size: x-large;
+
+}
+/* #projects-cont p{  
+    color: #ffffff;
+    padding-left: 400px;
+    padding-right: 400px;
+    font-size: x-large;
+
+} */
+#contact-cont p{  
+    color: #ffffff;
+    padding-left: 400px;
+    padding-right: 400px;
+    font-size: x-large;
+
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .card {
+    background: #fff349;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+  }
