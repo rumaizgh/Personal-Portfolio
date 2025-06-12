@@ -63,6 +63,9 @@ body{
     animation-duration: 3s;
     animation-fill-mode: forwards;
 }
+#about {
+    margin-bottom:220px;
+}
 #about h1{
     font-size: xx-large;
     padding-left: 80px;
@@ -87,13 +90,7 @@ body{
     font-size: x-large;
 
 }
-/* #projects-cont p{  
-    color: #ffffff;
-    padding-left: 400px;
-    padding-right: 400px;
-    font-size: x-large;
 
-} */
 #contact-cont p{  
     color: #ffffff;
     padding-left: 400px;
@@ -113,3 +110,12 @@ body{
     border-radius: 10px;
     box-shadow: 0 0 10px #ccc;
   }
+.projects{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 2s ease-out ;
+}
+.fade-in{
+    opacity: 1;
+    transform: translateY(0);
+}
